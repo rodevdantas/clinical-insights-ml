@@ -249,3 +249,253 @@ id_medico,nome,sexo,especialidade,crm,cidade,telefone
 248,Dr. José Pedro Barbosa,M,Ortopedista,CRM259784,Azevedo,+55 (081) 7215-1070
 249,Dr. Pedro Silveira,M,Pediatra,CRM596564,Monteiro do Sul,41 6253 2447
 250,Dr. Arthur Gabriel Pimenta,M,Ortopedista,CRM328552,Ramos,(021) 7687 0146
+251,Dra. Mariah Costa,F,Ginecologista,CRM368690,Pires,71 0657-8759
+252,Dra. Luna Gomes,F,Pediatra,CRM735324,Cirino do Sul,(051) 9304 0785
+253,Dr. Igor Castro,M,Urologista,CRM959099,da Cruz,+55 41 4803-9652
+254,Dr. Isaac Pastor,M,Oftalmologista,CRM213349,Sousa da Praia,0900 059 9293
+255,Dr. Vitor Hugo das Neves,M,Oftalmologista,CRM703766,Mendonça,+55 (051) 1039 3087
+256,Dra. Luísa Pimenta,F,Dermatologista,CRM849747,Cardoso,(081) 2500 2921
+257,Dr. Luiz Otávio Barbosa,M,Cardiologista,CRM720859,Santos das Flores,0900 154 5226
+258,Dr. Liam Cavalcanti,M,Cardiologista,CRM831059,Câmara Verde,+55 (051) 6442-2096
+259,Dra. Ana Beatriz Cirino,F,Urologista,CRM817497,Pimenta de Goiás,0300 172 5135
+260,Dr. Enzo Porto,M,Urologista,CRM693423,Santos,(071) 7043 3154
+261,Dr. Alexandre Aragão,M,Oftalmologista,CRM658623,Macedo das Pedras,+55 (041) 6765-8617
+262,Dra. Heloisa Castro,F,Ginecologista,CRM488571,Barbosa de Andrade,(021) 0541 1526
+263,Dr. Breno Novaes,M,Ortopedista,CRM778998,Fernandes,0300-970-6296
+264,Dra. Ana Júlia Brito,F,Cardiologista,CRM990844,Costela do Oeste,81 8844 4310
+265,Dra. Rebeca Cassiano,F,Urologista,CRM614013,Fonseca,+55 (011) 6149 7310
+266,Dr. Enzo Gabriel Porto,M,Dermatologista,CRM479781,Barros do Amparo,+55 61 4677 4186
+267,Dra. Maria Eduarda Garcia,F,Ginecologista,CRM260422,Cirino dos Dourados,+55 (061) 4774 3490
+268,Dra. Aylla Barros,F,Pediatra,CRM869440,Nogueira das Pedras,0900 380 6868
+269,Dra. Sra. Isabela Melo,F,Ortopedista,CRM947458,Barros das Flores,+55 (051) 8989 9217
+270,Dra. Eloah Cunha,F,Dermatologista,CRM556732,Cardoso,+55 (061) 6163 2945
+271,Dra. Srta. Aurora Gomes,F,Oftalmologista,CRM993085,Novaes Alegre,+55 84 8709-9861
+272,Dr. Dom Casa Grande,M,Urologista,CRM190872,Caldeira,0300 148 5646
+273,Dra. Sra. Olívia Andrade,F,Dermatologista,CRM355709,da Mota,71 2996 0653
+274,Dra. Olívia da Mata,F,Ortopedista,CRM739979,Almeida Alegre,(031) 4471 3247
+275,Dra. Juliana Siqueira,F,Oftalmologista,CRM130094,Pereira de Minas,+55 (071) 7367-8508
+276,Dra. Ana Luiza das Neves,F,Urologista,CRM440802,Carvalho do Galho,0300 023 3030
+277,Dr. Benicio Fonseca,M,Dermatologista,CRM322423,da Mota,31 7861 0357
+278,Dra. Melissa Cavalcanti,F,Urologista,CRM370902,Pastor de Novaes,(084) 5241 4060
+279,Dra. Hadassa Câmara,F,Oftalmologista,CRM725113,Rocha,+55 (084) 4680-0722
+280,Dra. Alexia Câmara,F,Ortopedista,CRM110644,Pereira da Mata,+55 84 6657-4374
+281,Dr. Cauã Abreu,M,Cardiologista,CRM353080,Novais da Mata,(031) 1715 4544
+282,Dra. Letícia Correia,F,Dermatologista,CRM682144,Moreira,+55 41 0965-2074
+283,Dr. Otto Guerra,M,Ginecologista,CRM599219,Sousa do Norte,0800 935 3875
+284,Dra. Letícia Cavalcante,F,Dermatologista,CRM931450,da Rocha,+55 41 7248 2513
+285,Dr. Henry Gabriel Souza,M,Cardiologista,CRM408528,Leão Alegre,31 4947 1709
+286,Dr. Brayan Melo,M,Dermatologista,CRM825391,Montenegro,+55 71 6846 0223
+287,Dr. Nicolas Nunes,M,Oftalmologista,CRM796212,Casa Grande de Dias,+55 (061) 1752-5007
+288,Dra. Giovanna Teixeira,F,Dermatologista,CRM680358,Oliveira,+55 (031) 7129-6666
+289,Dra. Maria Isis Abreu,F,Dermatologista,CRM882169,Nascimento,+55 (081) 5058-3003
+290,Dra. Manuella das Neves,F,Oftalmologista,CRM836996,Caldeira,51 8942 1044
+291,Dra. Stephany Peixoto,F,Oftalmologista,CRM421517,Lopes Grande,(081) 7532 6033
+292,Dra. Srta. Hadassa Siqueira,F,Pediatra,CRM226516,Pastor,21 2150-6489
+293,Dr. Benicio Ribeiro,M,Oftalmologista,CRM225362,Rezende,+55 (031) 0167 6184
+294,Dr. Eduardo Costela,M,Pediatra,CRM326895,da Rosa,84 1849 9261
+295,Dra. Bárbara da Paz,F,Oftalmologista,CRM859782,Viana,+55 51 7393 4835
+296,Dra. Sra. Laís Castro,F,Cardiologista,CRM973074,Novaes,11 3753-0011
+297,Dr. Thales Cassiano,M,Oftalmologista,CRM338533,Vasconcelos,31 1143-7447
+298,Dra. Beatriz Cavalcanti,F,Pediatra,CRM416950,da Rocha,21 5611 0022
+299,Dr. Luiz Henrique Macedo,M,Ginecologista,CRM660081,Siqueira de Minas,31 5216 6746
+300,Dr. Otto Rezende,M,Oftalmologista,CRM147726,Camargo,+55 81 0216 9797
+301,Dr. Mateus Vasconcelos,M,Ortopedista,CRM406327,Pimenta do Sul,+55 81 7716 7014
+302,Dr. Anthony Gabriel Santos,M,Ginecologista,CRM889359,Rios,(081) 8891 6375
+303,Dra. Maria Isis Cassiano,F,Cardiologista,CRM112861,Albuquerque,+55 (031) 8772-1753
+304,Dra. Lara Aragão,F,Dermatologista,CRM601968,Novaes,41 6317 7971
+305,Dra. Melissa Dias,F,Oftalmologista,CRM293319,Monteiro,+55 (031) 1660 8801
+306,Dr. Kevin Moraes,M,Oftalmologista,CRM600935,Rezende,(051) 5503-7589
+307,Dr. Renan Silva,M,Urologista,CRM168517,Silva dos Dourados,+55 61 1305 5488
+308,Dra. Bianca Aparecida,F,Dermatologista,CRM177680,Monteiro,+55 84 6149 3316
+309,Dr. Raul Viana,M,Pediatra,CRM256445,Silva,(081) 1609 1779
+310,Dra. Catarina Monteiro,F,Cardiologista,CRM360247,Moura,+55 (071) 8697 8292
+311,Dr. Sr. Cauã Gomes,M,Ortopedista,CRM901577,Montenegro das Flores,84 9346 5472
+312,Dra. Maria Sophia Pereira,F,Ortopedista,CRM725084,Sampaio da Prata,(051) 8333 9452
+313,Dr. Sr. Theodoro Nogueira,M,Urologista,CRM647957,Santos do Campo,11 8799 6846
+314,Dra. Stephany Caldeira,F,Dermatologista,CRM564226,Garcia,+55 (011) 0034-2442
+315,Dra. Laís Costela,F,Urologista,CRM717113,Fogaça,(041) 1983-8638
+316,Dra. Sra. Ana Julia Garcia,F,Oftalmologista,CRM696251,Leão Alegre,81 0043-9735
+317,Dr. Yago Sousa,M,Ortopedista,CRM876039,Vasconcelos,+55 (071) 4721-2281
+318,Dr. Asafe Lima,M,Urologista,CRM317881,Novais Paulista,+55 81 2940 5720
+319,Dr. Lorenzo Peixoto,M,Oftalmologista,CRM792509,Vasconcelos,0800-479-8515
+320,Dr. Henry Cirino,M,Pediatra,CRM351516,Viana,21 2688-6153
+321,Dr. Lucas Farias,M,Ortopedista,CRM178711,da Rocha do Oeste,0900-878-0157
+322,Dr. Joaquim Aparecida,M,Cardiologista,CRM528361,Garcia do Campo,51 4840 8588
+323,Dra. Raquel Aparecida,F,Ginecologista,CRM722656,Rezende do Oeste,(061) 8112 8801
+324,Dra. Hadassa Rodrigues,F,Oftalmologista,CRM134225,Caldeira do Oeste,61 6120-7501
+325,Dr. Benjamim Cavalcanti,M,Oftalmologista,CRM841296,Novais de Minas,0500 346 6766
+326,Dra. Allana Gomes,F,Ginecologista,CRM576086,Nascimento,+55 (011) 9190 1581
+327,Dr. Kevin Pereira,M,Ginecologista,CRM344762,da Paz,(031) 6607-2832
+328,Dra. Sra. Ísis da Rocha,F,Urologista,CRM929683,da Rosa,31 0882 1009
+329,Dr. Matteo Nascimento,M,Dermatologista,CRM220351,das Neves,+55 (084) 5368-2223
+330,Dr. José Correia,M,Ginecologista,CRM256226,Cirino,0300 087 8141
+331,Dra. Beatriz Costa,F,Urologista,CRM249145,Farias de Fogaça,+55 81 3149 1357
+332,Dr. Lucas Pimenta,M,Cardiologista,CRM273982,Sales Verde,+55 (021) 9955-6205
+333,Dra. Hellena Silva,F,Ortopedista,CRM885339,da Mota da Praia,+55 84 5777 5478
+334,Dra. Emanuella Ramos,F,Dermatologista,CRM230394,da Mota,+55 84 8341 1080
+335,Dra. Maria Luiza Vargas,F,Ginecologista,CRM418862,Andrade,81 4887-2563
+336,Dra. Lavínia Carvalho,F,Oftalmologista,CRM624783,Montenegro de Moraes,+55 31 6580 3928
+337,Dra. Melissa Castro,F,Dermatologista,CRM184349,Nunes,0300 275 0373
+338,Dr. João Freitas,M,Dermatologista,CRM870214,Aparecida,+55 (084) 8567-7005
+339,Dra. Stephany Porto,F,Ortopedista,CRM362529,Sousa Paulista,0800 892 6659
+340,Dr. Sr. Valentim da Cunha,M,Cardiologista,CRM340044,Câmara do Galho,71 5577 9082
+341,Dr. Enzo da Conceição,M,Urologista,CRM804938,Moraes,+55 84 3222-5913
+342,Dra. Luísa Silveira,F,Ortopedista,CRM142185,Mendes,(081) 7392-6030
+343,Dr. Enrico Carvalho,M,Dermatologista,CRM644173,Oliveira,+55 (011) 0242-8699
+344,Dra. Srta. Larissa Barros,F,Oftalmologista,CRM290305,Machado,0500-772-3692
+345,Dra. Emilly Pinto,F,Ginecologista,CRM953797,Cavalcante Alegre,(051) 9913-6621
+346,Dra. Gabriela Moreira,F,Cardiologista,CRM592841,Cassiano do Campo,+55 (051) 7990-8811
+347,Dra. Caroline Pereira,F,Dermatologista,CRM449499,Vasconcelos,(021) 8650-8637
+348,Dra. Marcela Pastor,F,Ginecologista,CRM209680,Lima,+55 84 4731 4986
+349,Dr. Gabriel Abreu,M,Oftalmologista,CRM531641,Oliveira,41 1806-3565
+350,Dra. Daniela Lima,F,Oftalmologista,CRM794769,da Luz da Prata,(011) 9594-6368
+351,Dra. Rafaela Cavalcanti,F,Urologista,CRM897441,Novais da Prata,(081) 4495-6213
+352,Dr. Enrico Brito,M,Dermatologista,CRM192337,Moraes,71 5890 2601
+353,Dra. Olivia Peixoto,F,Oftalmologista,CRM438977,Borges de Minas,+55 71 3519-0669
+354,Dr. Benjamin Vasconcelos,M,Urologista,CRM523808,Porto,11 7038-4309
+355,Dr. Valentim Sampaio,M,Ginecologista,CRM668950,Pimenta,+55 (041) 0530-2146
+356,Dra. Maria Laura Guerra,F,Dermatologista,CRM156837,Moreira,+55 (021) 1184 8955
+357,Dr. Henry Gabriel Pereira,M,Ortopedista,CRM479353,Marques,71 9042 6818
+358,Dra. Sarah da Rocha,F,Ginecologista,CRM563513,Camargo do Galho,+55 61 8947-6973
+359,Dr. Raul Rodrigues,M,Pediatra,CRM380028,Pastor de Alves,(081) 1416-3356
+360,Dr. Valentim Nascimento,M,Oftalmologista,CRM559398,Sampaio,+55 71 3416-5182
+361,Dra. Luara Fogaça,F,Cardiologista,CRM130271,Oliveira,+55 81 2373-3343
+362,Dr. Guilherme da Cruz,M,Ginecologista,CRM266071,Cassiano do Campo,+55 71 1790 8075
+363,Dra. Luara Monteiro,F,Ortopedista,CRM114338,Mendonça da Serra,31 4639-2086
+364,Dra. Ágatha Andrade,F,Cardiologista,CRM335615,Gonçalves da Serra,(051) 1875-0036
+365,Dr. Carlos Eduardo Duarte,M,Dermatologista,CRM223172,Pimenta Paulista,+55 (061) 8434-7955
+366,Dr. Theo Lima,M,Dermatologista,CRM851413,Leão,31 5647 2929
+367,Dra. Srta. Beatriz Silveira,F,Ortopedista,CRM839677,da Costa da Prata,(021) 6322-7026
+368,Dra. Catarina Pires,F,Dermatologista,CRM975271,Viana do Amparo,(031) 4890 6120
+369,Dra. Jade Melo,F,Dermatologista,CRM355570,Machado,(071) 4558 8450
+370,Dra. Camila Ferreira,F,Ortopedista,CRM251668,Oliveira,0500 824 5587
+371,Dra. Sra. Anna Liz Garcia,F,Pediatra,CRM728492,Martins Grande,+55 (041) 5699-6112
+372,Dr. Ian Dias,M,Urologista,CRM173201,Rezende da Mata,+55 81 9647-5987
+373,Dra. Eloah Cirino,F,Urologista,CRM928381,Cardoso,+55 41 4132-6111
+374,Dra. Ana Júlia Alves,F,Oftalmologista,CRM925981,Moura de Minas,+55 51 4921 6433
+375,Dra. Sra. Melina Pires,F,Urologista,CRM102689,Cardoso,51 2005 5778
+376,Dra. Melina Carvalho,F,Ginecologista,CRM413058,Pastor,0300-796-8845
+377,Dra. Ágatha da Conceição,F,Urologista,CRM255813,Macedo,(041) 5642 4008
+378,Dra. Manuella da Paz,F,Ortopedista,CRM607868,Nascimento de Albuquerque,(084) 7406-4930
+379,Dra. Maria Fernanda Correia,F,Oftalmologista,CRM678727,Novais das Pedras,61 3266 3416
+380,Dra. Srta. Stella Teixeira,F,Dermatologista,CRM437408,da Paz da Prata,+55 81 6312-2417
+381,Dr. Rael da Mata,M,Ginecologista,CRM350405,Correia de Duarte,+55 (031) 2080 2144
+382,Dra. Maysa Siqueira,F,Pediatra,CRM997594,da Conceição,+55 31 2073 5647
+383,Dra. Nicole Sampaio,F,Cardiologista,CRM433632,Farias,+55 21 2046 1872
+384,Dra. Isis Garcia,F,Ginecologista,CRM950823,Campos,+55 51 6730 3718
+385,Dra. Srta. Olívia Gomes,F,Dermatologista,CRM795928,Duarte da Serra,+55 (061) 8814 7435
+386,Dr. Henrique Camargo,M,Dermatologista,CRM138817,Porto,(021) 5024-9163
+387,Dr. Asafe Pacheco,M,Ortopedista,CRM718849,Sales de Peixoto,+55 (021) 5132-7195
+388,Dra. Srta. Ana Liz Fogaça,F,Urologista,CRM205239,Sampaio,61 1273-5857
+389,Dra. Srta. Alícia Sales,F,Cardiologista,CRM651499,Fogaça Grande,+55 61 0778-4873
+390,Dra. Ester Nogueira,F,Cardiologista,CRM857537,Duarte dos Dourados,+55 84 9821-8274
+391,Dr. Vitor Hugo Fonseca,M,Dermatologista,CRM786587,Abreu de Vasconcelos,21 6209-5935
+392,Dr. Sr. Vitor Gabriel Gomes,M,Cardiologista,CRM592296,Moura,11 8294-5651
+393,Dra. Stephany Ribeiro,F,Oftalmologista,CRM753534,Aparecida,+55 81 2031 7310
+394,Dra. Maria Julia Ribeiro,F,Ginecologista,CRM184216,Moura de Pinto,0900 405 3910
+395,Dra. Rebeca Barros,F,Urologista,CRM807115,Porto de Araújo,21 8650 9480
+396,Dra. Srta. Liz Barbosa,F,Oftalmologista,CRM757246,Moreira,+55 41 1386 3383
+397,Dra. Emanuelly Novais,F,Urologista,CRM667296,Souza do Campo,0500 576 1228
+398,Dr. Thiago Fernandes,M,Ortopedista,CRM171744,Nascimento,0300-755-8556
+399,Dr. Lorenzo Pereira,M,Ginecologista,CRM817644,Nunes,71 3684-5776
+400,Dra. Ana Beatriz da Paz,F,Pediatra,CRM883041,Moreira,+55 84 4043 3504
+401,Dr. Thomas Novais,M,Dermatologista,CRM203225,Brito,+55 (051) 7522 4593
+402,Dr. José Miguel da Rosa,M,Dermatologista,CRM274446,Oliveira,71 9315 7279
+403,Dra. Letícia Andrade,F,Cardiologista,CRM148225,Barros do Norte,(071) 5661 3906
+404,Dra. Lorena Moura,F,Urologista,CRM158845,Dias,71 9258-3206
+405,Dra. Sofia Borges,F,Oftalmologista,CRM493049,Lopes,(021) 6225 1790
+406,Dra. Maria Liz da Luz,F,Pediatra,CRM356059,Guerra,21 6227-8376
+407,Dra. Fernanda Novais,F,Ortopedista,CRM814919,da Cruz,+55 11 4659 1166
+408,Dr. Luiz Fernando Correia,M,Pediatra,CRM283573,Ferreira do Sul,(041) 2597 9270
+409,Dr. Guilherme Rodrigues,M,Ortopedista,CRM501126,Cassiano de Minas,+55 61 0392 4051
+410,Dr. Rael Melo,M,Dermatologista,CRM711484,Farias,+55 (084) 8338-8487
+411,Dr. Diego Sales,M,Pediatra,CRM583550,Garcia,0800 804 2043
+412,Dra. Júlia Aragão,F,Dermatologista,CRM367729,Rezende de Albuquerque,+55 (084) 6451 0463
+413,Dr. Thomas Santos,M,Urologista,CRM587853,Dias,(084) 9812-3878
+414,Dra. Srta. Ana Cecília da Cruz,F,Ginecologista,CRM673149,Farias do Amparo,61 2055 5438
+415,Dr. Bento Pires,M,Cardiologista,CRM563187,Gomes do Sul,84 4325-6216
+416,Dra. Heloísa Leão,F,Ortopedista,CRM413685,Oliveira,+55 (021) 6495-7823
+417,Dra. Srta. Ágatha Rodrigues,F,Ginecologista,CRM362246,Carvalho,(041) 8262 9251
+418,Dra. Yasmin Silveira,F,Urologista,CRM416797,Cirino,(051) 2056 6474
+419,Dr. Gabriel Caldeira,M,Dermatologista,CRM994787,Cirino,+55 (041) 9949 9939
+420,Dra. Isabel Rodrigues,F,Cardiologista,CRM348728,Fogaça,+55 21 7289 7526
+421,Dra. Olívia Carvalho,F,Ortopedista,CRM476395,Correia,+55 21 0604-6333
+422,Dra. Emanuelly Macedo,F,Ginecologista,CRM409571,Sales de Duarte,(051) 3660-9656
+423,Dr. Vitor Gabriel Moura,M,Urologista,CRM790203,Moreira,+55 51 7703 8860
+424,Dra. Maria Julia Moreira,F,Oftalmologista,CRM108491,Correia,(021) 7644 7264
+425,Dr. Benjamim Sales,M,Ortopedista,CRM881369,Martins,(041) 1812-9826
+426,Dra. Luna Machado,F,Urologista,CRM400096,Cavalcanti,(051) 9371-4521
+427,Dr. Danilo Santos,M,Ortopedista,CRM940886,Porto de Fonseca,+55 21 8689 2686
+428,Dra. Eloá Farias,F,Pediatra,CRM767542,Castro,+55 (011) 2064-4742
+429,Dr. Davi Lucca Costa,M,Ortopedista,CRM362801,Pinto,+55 61 0777-8097
+430,Dr. Henrique Pastor,M,Ginecologista,CRM201883,Marques de Jesus,(031) 1990-3849
+431,Dr. Sr. Benicio Cirino,M,Oftalmologista,CRM926918,Araújo,(084) 0209 9451
+432,Dra. Bianca Leão,F,Cardiologista,CRM707727,Castro,(011) 9998 2795
+433,Dra. Ayla Vargas,F,Ginecologista,CRM237795,Duarte da Praia,41 1681 4721
+434,Dr. Lucas Moura,M,Oftalmologista,CRM442589,Moura do Oeste,+55 (084) 9019-8179
+435,Dra. Sra. Mariane Pereira,F,Pediatra,CRM310548,da Luz do Galho,0500 952 9978
+436,Dr. Thales Cirino,M,Urologista,CRM665610,Santos,(021) 3010 7139
+437,Dra. Maria Sophia Aparecida,F,Ortopedista,CRM626169,Ferreira da Prata,+55 11 0344-1448
+438,Dra. Luna Vargas,F,Urologista,CRM272537,Camargo,(071) 5699 0235
+439,Dra. Pietra Melo,F,Urologista,CRM605254,Ramos,+55 84 7278 5760
+440,Dra. Letícia Nunes,F,Ginecologista,CRM455168,Novais da Prata,+55 (031) 3955 1240
+441,Dr. Marcos Vinicius Pires,M,Dermatologista,CRM178957,Oliveira,0500-629-1450
+442,Dr. Noah Borges,M,Urologista,CRM336574,da Costa de Freitas,(041) 4384-2150
+443,Dra. Ayla Macedo,F,Urologista,CRM943671,Mendes,21 2357-8452
+444,Dra. Stella Rocha,F,Cardiologista,CRM929090,Costela,+55 (051) 7681 0409
+445,Dra. Lívia Martins,F,Cardiologista,CRM377304,Caldeira,41 4094-3533
+446,Dr. João Guilherme Nascimento,M,Dermatologista,CRM486490,Vargas dos Dourados,+55 71 4224 1098
+447,Dra. Bella Costela,F,Ortopedista,CRM499534,Novaes Alegre,+55 81 2493-2149
+448,Dra. Ágatha Macedo,F,Cardiologista,CRM807617,Cardoso,+55 (041) 7016 0166
+449,Dr. Pietro Pimenta,M,Dermatologista,CRM126240,das Neves Alegre,+55 (081) 8179-2171
+450,Dra. Luana Rodrigues,F,Ortopedista,CRM332120,Melo de da Conceição,+55 21 2945-6255
+451,Dr. Ryan Alves,M,Ginecologista,CRM963874,Melo,+55 61 5772 4599
+452,Dra. Sophia Caldeira,F,Ginecologista,CRM416869,Silva do Campo,(061) 8148 7696
+453,Dra. Isabelly Novaes,F,Cardiologista,CRM246566,Mendes,51 1539 6695
+454,Dr. Isaac Cavalcanti,M,Cardiologista,CRM419149,Sousa,0500 719 9758
+455,Dra. Melina Cavalcanti,F,Cardiologista,CRM201913,Guerra de Minas,0300-196-5701
+456,Dr. Davi Miguel Pacheco,M,Ortopedista,CRM242254,Sá,+55 (011) 2784-6997
+457,Dra. Gabrielly Rodrigues,F,Dermatologista,CRM489033,da Rosa Verde,(031) 6519 0986
+458,Dra. Laís Araújo,F,Ortopedista,CRM878325,Novaes do Norte,+55 (011) 8514 0369
+459,Dr. Liam Silva,M,Dermatologista,CRM786735,Guerra das Flores,(021) 8327-2386
+460,Dr. Oliver Cassiano,M,Urologista,CRM613117,Rios Grande,+55 84 0102 7621
+461,Dra. Maria Vitória Marques,F,Oftalmologista,CRM134305,Pinto da Serra,(051) 8687-6532
+462,Dra. Alana Oliveira,F,Pediatra,CRM564920,Siqueira de da Costa,21 4689-5009
+463,Dra. Maria Eduarda Camargo,F,Pediatra,CRM997004,Sales de Barros,+55 (011) 8478-1891
+464,Dra. Olivia Pires,F,Cardiologista,CRM818987,Rodrigues,71 9490-5807
+465,Dra. Sophie Melo,F,Ortopedista,CRM776149,Leão da Praia,(021) 4209 4940
+466,Dra. Sra. Eloá Oliveira,F,Cardiologista,CRM517479,Ribeiro,(021) 9047 1281
+467,Dra. Isis Cardoso,F,Pediatra,CRM228093,da Mota Paulista,+55 (021) 1929 2752
+468,Dra. Isabela Mendonça,F,Cardiologista,CRM794963,Moura,+55 (051) 5129 2766
+469,Dr. Pedro Lucas Silveira,M,Ginecologista,CRM770556,Costela,0500 504 1027
+470,Dr. Renan da Rosa,M,Cardiologista,CRM925013,Souza de Sá,61 3667-4286
+471,Dra. Laura Machado,F,Pediatra,CRM232040,Rocha Alegre,51 0185 6945
+472,Dr. João Felipe Brito,M,Cardiologista,CRM970127,Rezende Verde,61 7393 8525
+473,Dr. Anthony Rocha,M,Ortopedista,CRM326441,Azevedo,+55 (021) 6181 7534
+474,Dr. Gael Andrade,M,Oftalmologista,CRM911984,Pinto,+55 31 0939 1119
+475,Dr. Marcos Vinicius Ribeiro,M,Urologista,CRM724932,Camargo,+55 (061) 4471-7465
+476,Dr. Enrico Vasconcelos,M,Oftalmologista,CRM251716,da Mota,+55 (081) 6650 4427
+477,Dr. Samuel Costa,M,Ortopedista,CRM362829,Cavalcanti do Amparo,+55 51 2863 9174
+478,Dr. Arthur Gabriel Barbosa,M,Cardiologista,CRM793169,Oliveira,+55 61 7072-0064
+479,Dr. Lucas Gonçalves,M,Pediatra,CRM115582,Moraes,(084) 7661-8306
+480,Dra. Sra. Camila Nunes,F,Urologista,CRM926730,Farias da Mata,71 0158 5174
+481,Dr. Sr. Felipe Novaes,M,Ortopedista,CRM439498,Gomes,+55 (071) 4615-7173
+482,Dr. Arthur Miguel Correia,M,Pediatra,CRM378258,Silveira,0900 376 1847
+483,Dr. Rael Almeida,M,Pediatra,CRM877747,Fernandes,+55 (081) 5061 3878
+484,Dra. Isabel Barbosa,F,Ortopedista,CRM219169,Sousa,+55 (011) 7079-0320
+485,Dr. Benicio das Neves,M,Dermatologista,CRM570050,Marques,0800-291-1179
+486,Dra. Hellena Azevedo,F,Ortopedista,CRM722503,Lima,(081) 6519 8253
+487,Dr. Erick Farias,M,Dermatologista,CRM628313,Campos,+55 84 2625-8273
+488,Dr. Asafe Carvalho,M,Ortopedista,CRM145471,Vieira,0800-620-7100
+489,Dra. Aurora Santos,F,Dermatologista,CRM774591,Leão do Amparo,+55 81 3248 7632
+490,Dr. Arthur Miguel Peixoto,M,Cardiologista,CRM602248,Silva,11 9145-6083
+491,Dra. Bárbara Moura,F,Dermatologista,CRM819425,Pinto,21 8837 3403
+492,Dr. Dom Rodrigues,M,Dermatologista,CRM847006,Monteiro de Cavalcanti,+55 (031) 0054-3645
+493,Dra. Mirella Aparecida,F,Cardiologista,CRM184714,Sousa,+55 (071) 8220 7811
+494,Dra. Melina Pastor,F,Ortopedista,CRM255539,Leão do Oeste,(061) 3153 1363
+495,Dr. Henry Barbosa,M,Pediatra,CRM388375,Pacheco de Mendonça,+55 (071) 6239 7265
+496,Dra. Natália Silveira,F,Dermatologista,CRM726410,Pires,11 4352 0904
+497,Dra. Brenda Martins,F,Dermatologista,CRM630108,Leão de Cavalcante,(081) 3492 9298
+498,Dra. Aurora Jesus,F,Cardiologista,CRM931621,Cunha de Pastor,(071) 7406-3356
+499,Dr. Henry Pastor,M,Urologista,CRM786516,Oliveira,+55 (011) 6007 8068
+500,Dr. Rhavi Sampaio,M,Dermatologista,CRM573489,Machado,11 3180-6325
