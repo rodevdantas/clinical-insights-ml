@@ -41,12 +41,12 @@ PLANO_REVERSE_MAP = {'Popular': 0, 'Executivo': 1, 'Premium': 2}
 @st.cache_data
 def load_data():
     if not os.path.exists(PATH_DATASET_FINAL):
-        st.error(f"❌ O arquivo final não foi encontrado:\n{PATH_DATASET_FINAL}")
+        st.error(f" O arquivo final não foi encontrado:\n{PATH_DATASET_FINAL}")
         return pd.DataFrame(), 0, 0
     try:
         df_final = pd.read_csv(PATH_DATASET_FINAL)
     except Exception as e:
-        st.error(f"❌ Erro ao carregar o dataset_final.csv:\n{e}")
+        st.error(f" Erro ao carregar o dataset_final.csv:\n{e}")
         return pd.DataFrame(), 0, 0
 
     # Recálculo da idade
@@ -120,7 +120,17 @@ if not df_dados.empty:
 
     # 2. Gráfico Principal (Dispersão: Recência vs. Monetário com Cluster RFM)
     st.header("1. Risco de Evasão por Cluster")
-    st.markdown("Este gráfico exibe o comportamento dos pacientes ativos. **O eixo Y (Monetário) é logarítmico para separar visualmente os clusters de alto e baixo valor.**")
+st.markdown(
+    """
+    Este gráfico ilustra como os pacientes ativos se distribuem em termos de **recência** (dias desde a última consulta) e **valor monetário**, separados pelos 4 perfis comportamentais definidos na clusterização RFM.
+
+    Embora as métricas estatísticas (Elbow e Silhouette Score) tenham indicado K=2 como a solução mais compacta, a escolha de K=4 foi mantida por razões de interpretabilidade e estratégia: cada grupo formado apresenta padrões distintos de risco e valor, essenciais para ações diferentes de retenção.
+
+    O eixo Y está em escala logarítmica devido ao tratamento de outliers, evidenciando melhor a separação dos clusters)
+
+    """
+)
+
 
     # Criando o gráfico interativo com Plotly: Cor pelo NOVO Cluster RFM
     fig = px.scatter(
@@ -153,7 +163,24 @@ if not df_dados.empty:
 
     # --- NOVO GRÁFICO DE DESTAQUE: SCORE DE ENGAJAMENTO POR CLUSTER ---
     st.header("2. Score de Engajamento por Cluster")
-    st.markdown("Este gráfico mostra o desempenho de cada grupo, confirmando que os RFM 1 e 3 têm a maior frequência prevista de consultas, e os RFM 0 e 2 possuem o maior risco de Churn.")
+   st.markdown(
+    """
+    Este gráfico apresenta a **frequência média prevista de consultas/ano** para cada cluster, resultado do modelo de regressão aplicado após a segmentação. Essa métrica indica a tendência anual de retorno dos pacientes.
+
+    Note que o RFM 2 e RFM 3 possuem valores muito próximos. Isso significa que o **engajamento previsto** - isoladamente - é quase igual, mas eles precisam ter cuidados totalmente diferentes.
+
+    A diferença real entre os clusters aparece quando combinamos os fatores do modelo RFM:
+
+    - **Recência**: quanto maior, maior o risco de churn.
+    - **Valor Monetário**: indica o impacto financeiro de cada perfil.
+    - **Frequência histórica**: consistência e padrão de uso ao longo do tempo.
+
+    Assim, mesmo com scores de engajamento quase idênticos, dois clusters podem ter **riscos e prioridades muito diferentes**, pois o risco de churn deriva do conjunto das variáveis RFM e não de um único indicador.
+
+    O modelo de regressão apresentou um **R² em torno de 47%**, um resultado sólido para dados de comportamento humano em saúde, onde há alta variabilidade individual. O objetivo aqui é revelar **tendências médias**, e não prever com precisão cada paciente isoladamente.
+    """
+)
+
 
     # Calculando o Score Médio por Cluster (excluindo Inativos -1)
     df_cluster_score = df_dados[df_dados['cluster_rfm'] != -1].groupby('cluster_rfm_desc')['frequencia_prevista_reg'].mean().reset_index()
