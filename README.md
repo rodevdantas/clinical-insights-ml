@@ -18,8 +18,8 @@ O pipeline segue uma abordagem **simples de MLOps**:
 | Etapa        | Script / Arquivo                  | Função |
 |--------------|----------------------------------|--------|
 | **Geração**  | `generate-df.py`                 | Cria a base de dados relacional: Pacientes, Consultas, Médicos |
-| **Processamento (ML)** | `process-data.py`         | Engenharia de features, transformação de dados e treinamento dos modelos |
-| **Consumo**  | `pacientes_engajamento_score.csv` | Dados finais consumidos pelo **dashboard Streamlit** |
+| **Processamento e treinamento** | `process-data.py`         | Engenharia de features, transformação de dados e treinamento dos modelos |
+| **Dados processados**  | `pacientes_engajamento_score.csv` | Dados finais consumidos pelo **dashboard Streamlit** |
 
 ---
 
@@ -32,7 +32,6 @@ O pipeline segue uma abordagem **simples de MLOps**:
 | Volume de Consultas         | ≈ 97.083         |
 | Geração de Dados            | Python (Faker + Random) com `seed=42` para reprodutibilidade |
 | Data Base de Referência     | 2025-05-20 (usada para calcular `recencia_dias`) |
-| Inconsistência Corrigida    | Erro de lógica na geração de IDs; garantiu distribuição correta das 97 mil consultas |
 
 **Features RFM criadas:**
 
@@ -41,7 +40,7 @@ O pipeline segue uma abordagem **simples de MLOps**:
 - **Valor Monetário (`valor_monetario`)** – Total gasto na clínica  
 
 **Transformação aplicada:**  
-- **Logaritmo natural com offset**: `np.log1p(x)` para estabilizar valores dispersos antes da clusterização (técnica sênior de tratamento de outliers).
+- **Logaritmo natural com offset**: `np.log1p(x)` para estabilizar valores dispersos antes da clusterização (tratamento de outliers).
 
 ---
 
@@ -49,7 +48,7 @@ O pipeline segue uma abordagem **simples de MLOps**:
 
 | Modelo                  | Tipo                | Função                                                                 | Performance |
 |-------------------------|------------------|------------------------------------------------------------------------|-------------|
-| **K-Means**             | Não-Supervisionado | Clusteriza pacientes em perfis RFM (ex.: "VIPS", "EM EVASÃO")          | Estável após log transform |
+| **K-Means**             | Não-Supervisionado | Clusteriza pacientes em perfis RFM (ex: "VIPS", "EM EVASÃO")          | Estável após log transform |
 | **Random Forest Regressor** | Supervisionado    | Calcula **Score de Engajamento** (`frequencia_prevista_reg`)            | R² ≈ 0.472 (47% da variação explicada) |
 
 **Insight principal:**  
@@ -65,8 +64,8 @@ O pipeline segue uma abordagem **simples de MLOps**:
 
 | Tecnologia | Função |
 |------------|--------|
-| Streamlit  | Criar dashboard web interativo, deploy em cloud |
-| Plotly     | Gráficos interativos: scatter plots e barras |
+| Streamlit  | Criar dashboard web interativo |
+| Plotly     | Gráficos interativos |
 
 **Recursos do dashboard:**
 
