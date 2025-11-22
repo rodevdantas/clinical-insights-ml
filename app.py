@@ -16,18 +16,19 @@ PATH_DATASET_FINAL = os.path.join(BASE_DIR, "data", "pacientes_engajamento_score
 # Mapeamentos
 CLUSTER_RFM_MAP = {
     -1: "Inativo / Sem Histórico (R$ 0)",
-    0: "RFM 0 - BAIXO VALOR",
-    1: "RFM 1 - ALTO VALOR ATIVO",
-    2: "RFM 2 - VALOR RELEVANTE",
-    3: "RFM 3 - RISCO LATENTE"
+
+    1: "RFM 1 - Valor Alto e Ativo",
+    2: "RFM 2 - Valor Relevante e Estável",
+    3: "RFM 3 - Valor Moderado e Vulnerável",
+    0: "RFM 0 - Baixo Valor e Baixa Atividade",
 }
 CLUSTER_MAP_ORDER = sorted(CLUSTER_RFM_MAP.keys())
 
 CLUSTER_COLOR_MAP = {
-    "RFM 1 - VIPS": '#1f77b4', # AZUL - VIPS (ID 1 no seu novo map)
-    "RFM 0 - OBS. LEVE": '#2ca02c', # VERDE - Alerta Leve (ID 0 no seu novo map)
-    "RFM 2 - OBS. MODERADA": '#ff7f0e', # LARANJA - Alerta Moderado
-    "RFM 3 - BAIXO IMPACTO": '#d62728', # VERMELHO - Risco (ID 3 no seu novo map)
+    "RFM 1 - Valor Alto e Ativo": '#1f77b4', # AZUL - VIPS 
+    "RFM 0 - Baixo Valor e Baixa Atividade": '#2ca02c', # VERDE - Alerta Leve 
+    "RFM 2 - Valor Relevante e Estável": '#ff7f0e', # LARANJA - Alerta Moderado
+    "RFM 3 - Valor Moderado e Vulnerável": '#d62728', # VERMELHO - Risco 
     "Inativo / Sem Histórico (R$ 0)": '#cccccc', # Cinza
 }
 
