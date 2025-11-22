@@ -35,7 +35,7 @@ O pipeline segue uma abordagem **simples de MLOps**:
 
 **Features RFM criadas:**
 
-- **Recência (`recencia_dias`)** – Dias desde a última consulta (principal fator de risco de churn)  
+- **Recência (`recencia_dias`)** – Dias desde a última consulta (principal fator de risco de churn com 98,5%)  
 - **Frequência (`frequencia_consultas`)** – Total de consultas por paciente  
 - **Valor Monetário (`valor_monetario`)** – Total gasto na clínica  
 
@@ -48,13 +48,13 @@ O pipeline segue uma abordagem **simples de MLOps**:
 
 | Modelo                  | Tipo                | Função                                                                 | Performance |
 |-------------------------|------------------|------------------------------------------------------------------------|-------------|
-| **K-Means**             | Não-Supervisionado | Clusteriza pacientes em perfis RFM (ex: "VIPS", "EM EVASÃO")          | Estável após log transform |
+| **K-Means**             | Não-Supervisionado | Clusteriza pacientes em perfis RFM (ex.: "VIPS", "EM EVASÃO")          | Estável após log transform |
 | **Random Forest Regressor** | Supervisionado    | Calcula **Score de Engajamento** (`frequencia_prevista_reg`)            | R² ≈ 0.472 (47% da variação explicada) |
 
 **Insight principal:**  
 
 - **Recência (`recencia_dias`)** → **98,5% do poder preditivo** do modelo para estimar a frequência futura  
-- **Conclusão estratégica:** A clínica deve **priorizar pacientes com alta recência**, usando KPIs específicos para evitar churn e maximizar receita.
+- **Conclusão estratégica:** A clínica deve **priorizar pacientes com alta recência, alto valor monetário e baixa frequência**, usando KPIs específicos para evitar churn e maximizar receita.
 
 ---
 
@@ -64,13 +64,14 @@ O pipeline segue uma abordagem **simples de MLOps**:
 
 | Tecnologia | Função |
 |------------|--------|
-| Streamlit  | Criar dashboard web interativo |
-| Plotly     | Gráficos interativos |
+| Streamlit  | Criar dashboard web interativo, deploy em cloud |
+| Plotly     | Gráficos interativos: scatter plots e barras |
 
 **Recursos do dashboard:**
 
 - **Clusters RFM visualizados graficamente**  
-- **Escala logarítmica** no eixo Y para valores monetários discrepantes (R$ 0 a R$ 6.000)  
+- **Escala logarítmica** no eixo Y para valores monetários discrepantes (R$ 0 a R$ 6.000)
+- **Score de Engajamento** baseado na média de frequência anual
 - **Tabela de priorização de pacientes:** Top 10 por cluster (recência + valor monetário), destacando **pacientes de maior risco financeiro**  
 
 **Acesse o dashboard clicando [aqui](https://dashboard-clinica-medica.streamlit.app/)**
