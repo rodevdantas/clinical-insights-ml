@@ -16,10 +16,10 @@ PATH_DATASET_FINAL = os.path.join(BASE_DIR, "data", "pacientes_engajamento_score
 # Mapeamentos
 CLUSTER_RFM_MAP = {
     -1: "Inativo / Sem Histórico (R$ 0)",
-    0: "RFM 0 - OBS. LEVE",
-    1: "RFM 1 - VIPS",
-    2: "RFM 2 - OBS. MODERADA",
-    3: "RFM 3 - BAIXO IMPACTO"
+    0: "RFM 0 - BAIXO VALOR",
+    1: "RFM 1 - ALTO VALOR ATIVO",
+    2: "RFM 2 - VALOR RELEVANTE",
+    3: "RFM 3 - RISCO LATENTE"
 }
 CLUSTER_MAP_ORDER = sorted(CLUSTER_RFM_MAP.keys())
 
@@ -205,8 +205,16 @@ if not df_dados.empty:
     st.divider()  # Adiciona um divisor após a seção 1 completa
 
     # 3. Análise Acionável: Tabela de Pacientes Críticos
-    st.header("3. Top 10 Pacientes com Maior Risco")
-    st.markdown("Esta lista prioriza os 10 pacientes mais críticos de cada perfil (Cluster RFM) que combinam **Alta Inatividade (Recência)** e **Alto Valor Monetário Histórico**. Ação imediata é necessária para reverter o risco de perda de receita.")
+    st.header("3. Top 10 Pacientes com Maior Inatividade e Maior Valor Histórico")
+    st.markdown("""
+Esta lista apresenta os pacientes ordenados pela combinação de:
+
+- **Maior tempo de inatividade (Recência)**  
+- **Maior Valor Monetário Histórico**
+
+A ordenação reflete apenas esses dois critérios, sem representar risco estatístico ou prioridade clínica.
+O objetivo é facilitar análises operacionais dentro de cada Perfil RFM.
+""")
 
     # Filtro de Seleção do NOVO Cluster
     selected_cluster_rfm = st.selectbox(
