@@ -63,7 +63,7 @@ print(dataset_final_path)
 print("\n Calculando RFM...")
 
 df_consultas["data_consulta"] = pd.to_datetime(df_consultas["data_consulta"])
-ref_date = datetime.now()
+ref_date = datetime(2025, 11, 22)
 
 rfm = df_consultas.groupby("id_paciente").agg({
     "data_consulta": lambda x: (ref_date - x.max()).days,   # Recência
