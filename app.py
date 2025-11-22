@@ -80,8 +80,6 @@ st.set_page_config(
 if not df_dados.empty:
     st.title("Dashboard de Otimização de Engajamento Clínico")
     st.subheader("Análise de Clusters e Previsão de Frequência")
-
-    # --- NOVA DESCRIÇÃO LONGA E DETALHADA PARA LEIGOS ---
     st.markdown("""
     Este dashboard é uma **solução de intervenção de risco** que utiliza Machine Learning (não-supervisionado e regressão) para ajudar a clínica a priorizar quais pacientes precisam de contato imediato.
     O principal objetivo é **transformar a inatividade (Recência) em receita acionável**.
@@ -120,7 +118,7 @@ if not df_dados.empty:
 
     # 2. Gráfico Principal (Dispersão: Recência vs. Monetário com Cluster RFM)
     st.header("1. Risco de Evasão por Cluster")
-st.markdown(
+    st.markdown(
     """
     Este gráfico ilustra como os pacientes ativos se distribuem em termos de **recência** (dias desde a última consulta) e **valor monetário**, separados pelos 4 perfis comportamentais definidos na clusterização RFM.
 
@@ -163,7 +161,7 @@ st.markdown(
 
     # --- NOVO GRÁFICO DE DESTAQUE: SCORE DE ENGAJAMENTO POR CLUSTER ---
     st.header("2. Score de Engajamento por Cluster")
-   st.markdown(
+    st.markdown(
     """
     Este gráfico apresenta a **frequência média prevista de consultas/ano** para cada cluster, resultado do modelo de regressão aplicado após a segmentação. Essa métrica indica a tendência anual de retorno dos pacientes.
 
