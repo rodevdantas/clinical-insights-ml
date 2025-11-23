@@ -134,7 +134,7 @@ y = rfm["frequencia_consultas"]
 # Descomente para rodar a validação da qualidade de separação dos clusters
 #silhouette_scores = {}
 #k_range_sil = range(2, 11)
-#print("\n📐 Rodando Silhouette Score (K=2 a K=10)...")
+#print("\nRodando Silhouette Score (K=2 a K=10)...")
 #
 #for k in k_range_sil:
 #    kmeans_model = KMeans(n_clusters=k, init='k-means++', random_state=42, n_init=10)

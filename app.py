@@ -25,11 +25,11 @@ CLUSTER_RFM_MAP = {
 CLUSTER_MAP_ORDER = sorted(CLUSTER_RFM_MAP.keys())
 
 CLUSTER_COLOR_MAP = {
-    "RFM 1 - Valor Alto e Ativo": '#1f77b4', # AZUL - VIPS 
-    "RFM 0 - Baixo Valor e Baixa Atividade": '#2ca02c', # VERDE - Alerta Leve 
-    "RFM 2 - Valor Relevante e Estável": '#ff7f0e', # LARANJA - Alerta Moderado
-    "RFM 3 - Valor Moderado e Vulnerável": '#d62728', # VERMELHO - Risco 
-    "Inativo / Sem Histórico (R$ 0)": '#cccccc', # Cinza
+    "RFM 1 - Valor Alto e Ativo": '#1f77b4',  
+    "RFM 0 - Baixo Valor e Baixa Atividade": '#2ca02c', 
+    "RFM 2 - Valor Relevante e Estável": '#ff7f0e', 
+    "RFM 3 - Valor Moderado e Vulnerável": '#d62728', 
+    "Inativo / Sem Histórico (R$ 0)": '#cccccc', 
 }
 
 PLANO_MAP = {
@@ -125,7 +125,7 @@ if not df_dados.empty:
 
     Embora as métricas estatísticas (Elbow e Silhouette Score) tenham indicado K=2 como a solução mais compacta, a escolha de K=4 foi mantida por razões de interpretabilidade e estratégia: cada grupo formado apresenta padrões distintos de risco e valor, essenciais para ações diferentes de retenção.
 
-    O eixo Y está em escala logarítmica devido ao tratamento de outliers, evidenciando melhor a separação dos clusters)
+    O eixo Y está em escala logarítmica devido ao tratamento de outliers, evidenciando melhor a separação dos clusters.
 
     """
 )
@@ -164,7 +164,7 @@ if not df_dados.empty:
     st.header("2. Score de Engajamento por Cluster")
     st.markdown(
     """
-    Este gráfico apresenta a **frequência média prevista de consultas/ano** para cada cluster, resultado do modelo de regressão aplicado após a segmentação. Essa métrica indica a tendência anual de retorno dos pacientes.
+    Este gráfico apresenta a **frequência média prevista de consultas/ano** para cada cluster, resultado do modelo de regressão aplicado após a segmentação.
 
     Note que alguns clusters possuem valores próximos. Isso significa que o **engajamento previsto** - isoladamente - é quase igual, o que não significa que devem ter tratamentos iguais.
 
@@ -174,9 +174,9 @@ if not df_dados.empty:
     - **Valor Monetário**: indica o impacto financeiro de cada perfil.
     - **Frequência histórica**: consistência e padrão de uso ao longo do tempo.
 
-    Assim, mesmo com scores de engajamento quase idênticos, dois clusters podem ter **riscos e prioridades muito diferentes**, pois o risco de churn deriva do conjunto das variáveis RFM e não de um único indicador.
+    Assim, mesmo com scores de engajamento quase idênticos, os clusters podem ter **riscos e prioridades muito diferentes**, pois o risco de churn deriva do conjunto das variáveis RFM e não de um único indicador.
 
-    O modelo de regressão apresentou um **R² em torno de 47%**, um resultado sólido para dados de comportamento humano em saúde, onde há alta variabilidade individual. O objetivo aqui é revelar **tendências médias**, e não prever com precisão cada paciente isoladamente.
+    O modelo de regressão apresentou um **R² em torno de 47%**.
     """
 )
 
@@ -256,11 +256,11 @@ O objetivo é facilitar análises operacionais dentro de cada Perfil RFM.
         O projeto busca resolver o problema de evasão (Churn) de pacientes, transformando grandes volumes de dados brutos em uma estratégia de intervenção clara e priorizada.
 
         **Principais entregas para a tomada de decisão:**
-        1. **Fator de Risco Dominante:** O modelo de **Regressão (Random Forest)** confirmou que a **Recência** (tempo sem consulta) é o fator mais importante, contribuindo com **98.5%** para a previsão de engajamento futuro.
-        2. **Clusterização:** O modelo **K-Means RFM** criou perfis baseados na matriz **RFM: Recência, Frequência e Valor Monetário**.
-           * O gráfico de barras no dashboard permite à gerência alocar recursos de marketing e comunicação exatamente para o perfil de maior potencial de retorno (os Clusters de maior Score).
+        1. **Fator de Risco:** O modelo de **Regressão (Random Forest)** confirmou que a **Recência** (tempo sem consulta) é o fator mais importante, contribuindo com **98.5%** para a previsão de engajamento futuro.
+        2. **Clusterização:** O modelo **K-Means** criou perfis baseados na matriz **RFM: Recência, Frequência e Valor Monetário**.
+           * Ação prática: Direcionar campanhas específicas para cada grupo, priorizando clientes com alta Recência e alto Valor Monetário com ofertas personalizadas.
         3. **Top 10**: A lista de pacientes da seção 3 prioriza os pacientes com a maior Recência.
-           * **Ação Prática:** A equipe de Churn deve direcionar o esforço de contato para estes pacientes, **otimizando o recurso** e focando na Recência para converter inatividade em receita.
+           * Ação prática: A equipe de Churn deve direcionar o esforço de contato para estes pacientes, **otimizando o recurso** e focando na Recência para converter inatividade em receita.
         """
     )
 
