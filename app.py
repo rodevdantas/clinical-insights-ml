@@ -166,7 +166,7 @@ if not df_dados.empty:
     """
     Este gráfico apresenta a **frequência média prevista de consultas/ano** para cada cluster, resultado do modelo de regressão aplicado após a segmentação. Essa métrica indica a tendência anual de retorno dos pacientes.
 
-    Note que o RFM 2 e RFM 3 possuem valores muito próximos. Isso significa que o **engajamento previsto** - isoladamente - é quase igual, mas eles precisam ter cuidados totalmente diferentes.
+    Note que alguns clusters possuem valores próximos. Isso significa que o **engajamento previsto** - isoladamente - é quase igual, o que não significa que devem ter tratamentos iguais.
 
     A diferença real entre os clusters aparece quando combinamos os fatores do modelo RFM:
 
@@ -259,8 +259,8 @@ O objetivo é facilitar análises operacionais dentro de cada Perfil RFM.
         1. **Fator de Risco Dominante:** O modelo de **Regressão (Random Forest)** confirmou que a **Recência** (tempo sem consulta) é o fator mais importante, contribuindo com **98.5%** para a previsão de engajamento futuro.
         2. **Clusterização:** O modelo **K-Means RFM** criou perfis baseados na matriz **RFM: Recência, Frequência e Valor Monetário**.
            * O gráfico de barras no dashboard permite à gerência alocar recursos de marketing e comunicação exatamente para o perfil de maior potencial de retorno (os Clusters de maior Score).
-        3. **Intervenção Urgente**: A lista de pacientes com maior risco (Seção 3) prioriza os pacientes com a maior Recência **E** o maior Valor Monetário **E** a menor Frequência.
-           * **Ação Prática:** A equipe de Churn deve direcionar o esforço de contato para estes pacientes primeiro, **otimizando o recurso** e focando na Recência para converter inatividade em receita.
+        3. **Top 10**: A lista de pacientes da seção 3 prioriza os pacientes com a maior Recência.
+           * **Ação Prática:** A equipe de Churn deve direcionar o esforço de contato para estes pacientes, **otimizando o recurso** e focando na Recência para converter inatividade em receita.
         """
     )
 
