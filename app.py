@@ -150,7 +150,7 @@ if not df_dados.empty:
     fig.update_layout(
         xaxis_title="Recência (dias desde a última consulta)",
         yaxis_title="Valor Total Gasto (R$)",
-        legend_title="Novo Perfil RFM",
+        legend_title="Clusters",
         height=450,
         margin=dict(t=50, b=0, l=0, r=0)
     )
