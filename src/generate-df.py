@@ -14,7 +14,6 @@ random.seed(42)
 fake = Faker('pt-BR')
 
 num_consultas = 97083
-# Variável para obter o número total de pacientes (o MAX ID)
 num_pacientes_total = pacientes['id_paciente'].max()
 
 def get_valor_consulta(plano):
@@ -27,7 +26,6 @@ def get_valor_consulta(plano):
     
 consultas = []
 for i in range(1, num_consultas + 1):
-    # CORREÇÃO CRÍTICA: Escolhe um ID de paciente em toda a base (1 até o max ID)
     paciente_id = random.choice(range(1, num_pacientes_total + 1)) 
     medico_id = random.choice(range(1,501))
     data_consulta = fake.date_between(start_date='-1y', end_date='today')
@@ -37,8 +35,6 @@ for i in range(1, num_consultas + 1):
         plano = pacientes[pacientes['id_paciente'] == paciente_id]['plano_saude'].values[0]
         valor_consulta = get_valor_consulta(plano)
     except IndexError:
-        # Se o paciente_id gerado aleatoriamente por algum motivo não estiver no DF (o que não deve ocorrer após a correção)
-        # Usamos um valor padrão para não quebrar o loop
         plano = 'Popular'
         valor_consulta = 0
         
@@ -127,7 +123,6 @@ import os
 Faker.seed(42)
 random.seed(42)
 fake = Faker('pt-BR')
-# USANDO O VALOR CORRETO
 num_pacientes = 47295 
 planos = ['Popular', 'Executivo', 'Premium']
 sexos = ['M', 'F']
